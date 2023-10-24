@@ -1,7 +1,7 @@
 import setuptools
 
-with open("README", 'r') as f:
-    long_description = f.read()
+with open("README.md", "r", encoding="utf-8") as fh:
+    long_description = fh.read()
 
 setuptools.setup(
    name="indonesia-earthquake",
@@ -14,13 +14,13 @@ setuptools.setup(
    long_description_content_type="text/markdown",
    url="https://github.com/dikisaputra15/indonesia-latest-earthquake",
    project_urls={
-       "website" : "selaicoding.com"
+       "website" : "selaicoding.com",
    },
-   scripts=[
+   classifiers=[
             "Programming Language :: Python :: 3",
             "License :: OSI Approved :: GNU General Public License v3 (gplv3)e",
             "Operating System :: OS Independent",
-            "Development Status :: 5 - Production Stable"
+            "Development Status :: 5 - Production/Stable"
            ],
    packages=setuptools.find_packages(),
    python_requires=">=3.6",
